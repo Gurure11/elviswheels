@@ -1,454 +1,146 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Breeze Refridgeration</title>
-
-    <style>
-
-        body {
-
-            font-family: Arial, sans-serif;
-
-            margin: 0;
-
-            padding: 0;
-
-        }
-
-        header {
-
-            background-color: #333;
-
-            color: #fff;
-
-            padding: 10px;
-
-            text-align: center;
-
-        }
-
-        .container {
-
-            max-width: 800px;
-
-            margin: 0 auto;
-
-            padding: 20px;
-
-        }
-
-        .grid {
-
-            display: grid;
-
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
-            gap: 20px;
-
-        }
-
-        .grid-item {
-
-            border: 1px solid #ddd;
-
-            padding: 10px;
-
-        }
-
-        .grid-item img {
-
-            width: 100%;
-
-            height: auto;
-
-        }
-
-        form {
-
-            margin-top: 20px;
-
-            border: 1px solid #ccc;
-
-            padding: 20px;
-
-        }
-
-        form input[type="text"],
-
-        form input[type="email"],
-
-        form input[type="submit"] {
-
-            width: 100%;
-
-            padding: 10px;
-
-            margin-bottom: 10px;
-
-        }
-
-        form input[type="submit"] {
-
-            background-color: #333;
-
-            color: #fff;
-
-            border: none;
-
-            cursor: pointer;
-
-        }
-
-        form input[type="submit"]:hover {
-
-            background-color: #555;
-
-        }
-
-        #b{
-
-            width: 200px;
-
-        }
-
-        #whatsapp{
-
-            width: 40px;
-
-            border-radius: 5px;
-
-        }
-	    #whatsapp:hover{
-		    cursor: pointer;
-		    opacity: 0.6;
-		    transition: 0.19s;
-	    }
-
-        P{
-
-            text-align: center;
-
-            color: grey;
-
-            align-items: center;
-
-        }
-
-        h4{
-
-            color: orange;
-
-            
-
-            align-items: center;
-
-            text-align: center;
-
-            font-size: 30px;
-		
-
-        }
-
-        #c{
-
-            width: 300px;
-
-            border-radius: 10px;
-
-        }
-
-        footer{
-
-            color: white;
-
-            background-color: black;
-
-            text-align: center;
-
-        }
-
-        #d{
-
-            width: 40px;
-
-            border-radius: 5px;
-
-            margin-left: 40px;
-
-        }
-
-        #d:hover{
-
-            opacity: 0.6;
-
-            transition: 0.19s;
-
-            cursor: pointer;
-
-        }
-
-        #safari:hover{
-
-            color: yellow;
-
-            background-color: red;
-
-            opacity: 0.6;
-
-            transition: 0.19s;
-
-            cursor: pointer;
-
-        }
-
-        #facebook{
-
-            width: 40px;
-
-            border-radius: 20px;
-
-        }
-	    #facebook:hover{
-		    cursor: pointer;
-		    opacity: 0.6;
-		    transition: 0.19s;
-		    
-	    }
-
-        #map:hover{
-
-            cursor: pointer;
-
-            color: red;
-
-            transition: 0.7s;
-
-            opacity: 0.6;
-
-            
-
-        }
-
-        #map{
-
-            text-align: center;
-
-            font: bold;
-
-            margin-left: 100px;
-
-        }
-p{
-	color: grey;
-	text-align: center
-}
-	    #back:hover{
-		    cursor: pointer;
-		    color: blue;
-		    transition: 0.18s;
-		    opacity: 0.6;
-		    
-	    }
-	    #back{
-		    margin-left: 50px;
-	    }
-        
-
-    </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elvis Wheels - Vanderbijlpark</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; }
+    .swiper { width: 100%; height: 500px; }
+    .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+    .service-grid img { width: 100%; height: auto; border-radius: 0.5rem; }
+  </style>
 </head>
+<body class="bg-white text-blue-900">
+  <nav class="bg-blue-900 text-white shadow-md p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Elvis Wheels</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#home" class="hover:text-red-500">Home</a></li>
+      <li><a href="#about" class="hover:text-red-500">About</a></li>
+      <li><a href="#services" class="hover:text-red-500">Services</a></li>
+      <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+    </ul>
+  </nav>
 
-<body>
-
-    <header>
-
-        <h1>Breeze Refridgeration</h1><img id="b" src="images/f.jpg">
-
-        <p>Your exprerienced refridgeration repairs & installations</p>
-
-    </header>
-
-    <div class="container">
-
-        <h2>Welcome to Breeze Refridgeration</h2> <a href="https://api.whatsapp.com/send?phone=%2B27612564814&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whatsapp" src="images/whats.jpeg">Whatsapp<a/> <a href="https://web.facebook.com/"><img id="facebook" src="images/facebook.jpg"></a><br><br>
-
-            <br>
-
-        <div class="grid">
-
-            <div class="grid-item">
-
-               <img src="images/e.jpg" alt="Image 1">
-
-            </div>
-
-            <div class="grid-item">
-
-                 <img src="images/g.jpg" alt="Image 2">
-
-            </div>
-
-            <div class="grid-item">
-
-               <img src="images/a.jpeg" alt="Image 3">
-
-            </div>
-
-
-
-            <div class="grid-item">
-
-                 <img src="images/h.jpg" alt="Image 1">
-
-            </div>
-
-            <div class="grid-item">
-
-                <img src="images/f.jpg" alt="Image 2">
-
-            </div>
-
-            <div class="grid-item">
-
-                 <img src="images/c.jpeg" alt="Image 3">
-
-            </div>
-
-            <!-- Add more images as needed -->
-
-        </div>
-
-        
-
-        <h3>Book For Refridgeration Services</h3>
-
-        <form action="https://formsubmit.co/benjamin@benssatrading.com" method="POST">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-
-            <input type="email" name="email" placeholder="Your Email" required>
-
-            <input type="text" name="equipment at fault" placeholder="Equipment needing service" required>
-
-            <input type="text" name="Address & phone" placeholder="Address & Phone" required>
-		<input type"text arear" name="message" placeholder="Message">
-
-            <input type="submit" value="Book Now">
-
-        </form>
-
+  <section id="home" class="pt-16">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/wheels1.jpg" alt="Wheels"></div>
+        <div class="swiper-slide"><img src="images/service1.jpg" alt="Service"></div>
+        <div class="swiper-slide"><img src="images/rims1.jpg" alt="Rims"></div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </section>
 
-    <hr>
+  <section id="about" class="py-12 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg">
+        Elvis Wheels, based in Vanderbijlpark, has been offering excellent and reliable tyre and rim services for over ten years. With two well-established branches,
+        we specialize in wheel balancing, aluminium welding, suspension work, brake pad replacement, shock replacement, new and used tyres supply, rim repairs, rim polishing,
+        PCD hole changes, and diamond cutting. Our commitment to quality, safety, and customer satisfaction sets us apart in the industry.
+      </p>
+    </div>
+  </section>
 
-    <br>
+  <section id="services" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 service-grid">
+        <div>
+          <img src="images/wheel-balance1.jpg" alt="Wheel Balancing">
+          <img src="images/wheel-balance2.jpg" alt="Wheel Balancing">
+          <p class="mt-2">We ensure your wheels are perfectly balanced for a smooth and safe ride.</p>
+        </div>
+        <div>
+          <img src="images/welding1.jpg" alt="Aluminium Welding">
+          <img src="images/welding2.jpg" alt="Aluminium Welding">
+          <p class="mt-2">Professional aluminium welding for cracked or broken wheels, restoring strength and appearance.</p>
+        </div>
+        <div>
+          <img src="images/suspension1.jpg" alt="Suspension">
+          <img src="images/suspension2.jpg" alt="Suspension">
+          <p class="mt-2">Reliable suspension repairs and upgrades to improve your vehicle's handling and comfort.</p>
+        </div>
+        <div>
+          <img src="images/brake1.jpg" alt="Brake Pads">
+          <img src="images/brake2.jpg" alt="Brake Pads">
+          <p class="mt-2">Brake pad replacement services to keep your vehicle safe and responsive on the road.</p>
+        </div>
+        <div>
+          <img src="images/shocks1.jpg" alt="Shock Replacement">
+          <img src="images/shocks2.jpg" alt="Shock Replacement">
+          <p class="mt-2">We replace worn shocks to improve ride comfort and vehicle control.</p>
+        </div>
+        <div>
+          <img src="images/tyres1.jpg" alt="Tyres">
+          <img src="images/tyres2.jpg" alt="Tyres">
+          <p class="mt-2">We supply both new and used tyres to fit your budget and performance needs.</p>
+        </div>
+        <div>
+          <img src="images/rim-repair1.jpg" alt="Rim Repairs">
+          <img src="images/rim-repair2.jpg" alt="Rim Repairs">
+          <p class="mt-2">Restore your rims to their original look and performance with our expert repair services.</p>
+        </div>
+        <div>
+          <img src="images/polish1.jpg" alt="Rim Polishing">
+          <img src="images/polish2.jpg" alt="Rim Polishing">
+          <p class="mt-2">Give your rims a brand-new shine with our rim polishing service.</p>
+        </div>
+        <div>
+          <img src="images/pcd1.jpg" alt="PCD Change">
+          <img src="images/pcd2.jpg" alt="PCD Change">
+          <p class="mt-2">We offer PCD changes from 4 to 5 holes for better wheel compatibility and customization.</p>
+        </div>
+        <div>
+          <img src="images/diamondcut1.jpg" alt="Diamond Cut">
+          <img src="images/diamondcut2.jpg" alt="Diamond Cut">
+          <p class="mt-2">Precision diamond cutting to enhance your rims’ appearance with a unique finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  
+  <section id="contact" class="py-12 bg-blue-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <p class="text-center mb-4">📍 Branch 1: 132 Hans Strydom Street, Vanderbijlpark</p>
+      <div class="w-full h-64 mb-6">
+        <iframe class="w-full h-full rounded" src="https://www.google.com/maps?q=132+Hans+Strydom+Street,+Vanderbijlpark&output=embed"></iframe>
+      </div>
+      <p class="text-center mb-4">📍 Branch 2: 17 Avenga Street, Klassie, Vanderbijlpark</p>
+      <div class="w-full h-64 mb-6">
+        <iframe class="w-full h-full rounded" src="https://www.google.com/maps?q=17+Avenga+Street,+Klassie,+Vanderbijlpark&output=embed"></iframe>
+      </div>
+      <p class="text-center mb-4">📞 Cell: <a href="tel:+27630800169" class="text-blue-800 font-semibold">063 080 0169</a></p>
+      <div class="flex justify-center gap-6 mt-6">
+        <a href="https://facebook.com" target="_blank" class="text-blue-700 text-2xl"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/27630800169" target="_blank" class="text-green-600 text-2xl"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
 
-    <br>
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Elvis Wheels. All rights reserved.</p>
+  </footer>
 
-   <p> 
-<h4>**About Breeze Refridgeration**</h4><br><br>
-<p>Welcome to Breeze Refrigeration, your trusted partner for all your cooling needs. With over a decade of dedicated service,<br>
- we are the go-to experts in Kempton Park and beyond for fridge repairs, air conditioner maintenance, freezer room installations, and much more.<br>
-Our commitment to excellence and round-the-clock availability sets us apart in the industry.<br></p>
-
-<p>At Breeze Refrigeration, we understand the importance of keeping your refrigeration systems running smoothly, whether it's for your home, business,<br>
-or healthcare facility. Our team of skilled technicians is equipped with the knowledge and experience to handle any repair, maintenance, or installation <br>
-job efficiently and effectively.<br></p>
-	<p><a href="images/l.jpg"><img id="c" src="images/l.jpg"></a><br><br></p>
-		
-
-<p>We pride ourselves on our 24/7 on-call service, ensuring that help is always just a phone call away, no matter the time of day or night. Whether you<br>
-need emergency repairs or scheduled maintenance, you can count on us to be there when you need us most.<br></p>
-
-<p>In addition to our core services, we also specialize in providing solutions for hospitals, including mortuary installations and de-icing services. Our<br>
-expertise extends beyond traditional refrigeration needs, allowing us to meet the unique requirements of healthcare facilities with precision and care.<br></p>
-<p><a href="images/m.jpg"><img id="c" src="images/m.jpg"></a><br><br></p>
-<p>At Breeze Refrigeration, customer satisfaction is our top priority. We are dedicated to delivering quality workmanship, reliable service, and personalized<br>
-solutions tailored to your specific needs. When you choose us, you can rest assured that your cooling systems are in capable hands.<br></p>
-
-<p>Experience the difference with Breeze Refrigeration – your trusted partner for all things cooling. Contact us today to learn more about our services and how <br>
-we can assist you with your refrigeration needs.<br></p>
-
-
-
-
-
-
-
-
-
-<br>
-
-<hr>
-
-<br>
-
-
-
-<br>
-
-            <br>
-
-            
-
-<br>
-
-<p>
-
-<a href="images/b.jpeg"><img id="c" src="images/b.jpeg"></a><br><br>
-	We are 24/7 available for any refrigeration repairs.<br><br>
-
-<a href="images/d.jpg"><img id="c" src="images/d.jpg"></a><br><br>
-	We have specially trained and qualified personnel to diagnise and repair  any model fridge or freezer.<br>
-
-	When it comes to refridgeration we are the best in the field with years of experience and reliable network of companies and individuals for spares.<br><br>
-	<h4>**Contact Us:**</h4><br>
-
-<p>Experience the difference with Breeze Refridgeration. Contact us today for a quotation we can help your business thrive.<br>
-<br><br></p>
-
-
-
-
-<hr><br>
-
-    <br>
-
-  <p>  <a id="map" href="https://maps.app.goo.gl/kNnjPVXyQR7yc5w17">Locate Us Here</a>  
-</p>
-    <br>
-
-<footer>
-
-    <br>
-
-    
-
-    &copy Breeze Refridgeration 2024  Cell: 061 256 4814  Email: bothwell.gurure11@gmail.com<br> Head Office - , 23 Swart Street, Kempton Park, Johannesburg<br>
-
-    <br>
-
-    <br>
-
-</footer>
-
-</p>
-
-
-
-
-
-
-
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
-
-			 </html>
+</html>
