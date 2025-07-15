@@ -1,138 +1,101 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Masai Twist Salon</title>
-	<style type="text/css">
-		#main-head{
-			font-family: cursive;
-			font-size: 18px;
-			text-decoration: underline;
-			color: blue;
-		}
-		#about{
-			color: grey;
-			text-decoration: underline;
-			font-size: 15px;
-		}
-		#a{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#b{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#c{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#d{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#e{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#f{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#g{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#h{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#i{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#j{
-			width: 600px;
-			border-radius: 5px;
-		}
-		#main-body{
-
-			text-align: center;
-			align-items: center;
-		}
-
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elvis Wheels Gallery</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    .swiper {
+      width: 100%;
+      height: 600px;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      width: auto;
+      max-height: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
-<body id="main-body">
-	<h1 id="main-head">MASAI TWIST HAIR SALON</h1><br>
-	<br>
+<body class="bg-white text-blue-900">
+  <!-- Header -->
+  <nav class="bg-blue-900 text-white p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Elvis Wheels Gallery</h1>
+    <a href="index.html" class="hover:text-red-500">Home</a>
+  </nav>
 
-	<strong id="about">About Us</strong><br>
-	<br>
-	<p>Masai Twist hair salon is owned by Paul, and its located right in the CBD of Vereening <br>
-	 right on Leslie Street and Johannesburg. He is the best known Masai twist technician in town with over ten years<br>
-	 of experience and vast amount of satisfied clients who keep coming back for more. Our Salon has the most<br>
-	 advanced equipment from salon chairs you sit on to hair basins and driers.  Seeing is beleiving come in and see<br>
-	 for yourself.<br>
-	 Masai Twist done under 2-3hrs and we are also in Johannesburg, please book in now for your spot!
-	 <br>
-	 <br>
-		<video width"700" height"400" controls>
-			<source src="video/paul.mp4" type="video/mp4">
-		</video><br>
-		<br>
-		<br>
-	Our Hair Styles & colours<br>
-		<br>
-		<br>
-	 <img id="a" src="images/a.jpg"><br>
-	 Our styles are exotic, you will never go wrong with us.
-	 <br>
-	 <br>
-	  <img id="b" src="images/b.jpg"><br>
-	 <br>
-	 <br>
-	  <img id="c" src="images/c.jpg"><br>
-	  People wont stop commenting and asking where you got it from.<br>
-	 <br>
-	 <br>
-	  <img id="d" src="images/d.jpg"><br>
-	Suitable for any occassion and with any outfit.	
-	 <br>
-	 <br>
-	  <img id="e" src="images/e.jpg"><br>
-	  All you have to do is chose the color that you would love and leave it to us.
-	 <br>
-	 <br>
-	  <img id="f" src="images/f.jpg"><br>
-	  Once you come to Paul and do the Masai twist you will never go anywhere else, he is the best in town.
-	 <br>
-	 <br>
-	  <img id="g" src="images/g.jpg"><br>
-	  All styles done under 3hrs, we are very fast and efficient.
-	 <br>
-	 <br>
-	  <img id="h" src="images/h.jpg"><br>
-	Perfect Hair Style for an outing with your partner for a function.
-	 <br>
-	 <br>
-	  <img id="i" src="images/i.jpg"><br>
-	  All are free and welcome at our salon, all ages, all races, nationalities and all classes we do not <br>
-	  descriminate.
-	 <br>
-	 <br>
-	  
-	 <footer>
-	 	<a href="details.html">Home Page</a>
-	 	<a href="contacts.html">Next Page</a>
-	 </footer>
-	
+  <!-- Gallery Slider -->
+  <section class="pt-8 px-4">
+    <div class="swiper gallerySwiper">
+      <div class="swiper-wrapper">
+        <!-- Replace with your actual image paths -->
+        <div class="swiper-slide"><img src="images/el1.jpg" alt="Photo 1"></div>
+        <div class="swiper-slide"><img src="images/el2.jpg" alt="Photo 2"></div>
+        <div class="swiper-slide"><img src="images/el3.jpg" alt="Photo 3"></div>
+        <div class="swiper-slide"><img src="images/el4.jpg" alt="Photo 4"></div>
+        <div class="swiper-slide"><img src="images/el5.jpg" alt="Photo 5"></div>
+        <div class="swiper-slide"><img src="images/el6.jpg" alt="Photo 6"></div>
+        <div class="swiper-slide"><img src="images/el7.jpg" alt="Photo 7"></div>
+        <div class="swiper-slide"><img src="images/el8.jpg" alt="Photo 8"></div>
+        <div class="swiper-slide"><img src="images/el9.jpg" alt="Photo 9"></div>
+        <div class="swiper-slide"><img src="images/el10.jpg" alt="Photo 10"></div>
+        <div class="swiper-slide"><img src="images/el11.jpg" alt="Photo 11"></div>
+        <div class="swiper-slide"><img src="images/el12.jpg" alt="Photo 12"></div>
+        <div class="swiper-slide"><img src="images/el13.jpg" alt="Photo 13"></div>
+        <div class="swiper-slide"><img src="images/el14.jpg" alt="Photo 14"></div>
+        <div class="swiper-slide"><img src="images/el15.jpg" alt="Photo 15"></div>
+        <div class="swiper-slide"><img src="images/el16.jpg" alt="Photo 16"></div>
+        <div class="swiper-slide"><img src="images/el17.jpg" alt="Photo 17"></div>
+        <div class="swiper-slide"><img src="images/el18.jpg" alt="Photo 18"></div>
+        <div class="swiper-slide"><img src="images/el19.jpg" alt="Photo 19"></div>
+        <div class="swiper-slide"><img src="images/el20.jpg" alt="Photo 20"></div>
+        <div class="swiper-slide"><img src="images/el21.jpg" alt="Photo 21"></div>
+        <div class="swiper-slide"><img src="images/el22.jpg" alt="Photo 22"></div>
+        <div class="swiper-slide"><img src="images/el23.jpg" alt="Photo 23"></div>
+        <div class="swiper-slide"><img src="images/el24.jpg" alt="Photo 24"></div>
+        <div class="swiper-slide"><img src="images/el25.jpg" alt="Photo 25"></div>
+        <div class="swiper-slide"><img src="images/el26.jpg" alt="Photo 26"></div>
+        <div class="swiper-slide"><img src="images/el27.jpg" alt="Photo 27"></div>
+        <div class="swiper-slide"><img src="images/el28.jpg" alt="Photo 28"></div>
+        <div class="swiper-slide"><img src="images/el29.jpg" alt="Photo 29"></div>
+        <div class="swiper-slide"><img src="images/el30.jpg" alt="Photo 30"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 Elvis Wheels. All rights reserved.</p>
+  </footer>
 
-
-	</p>
-
+  <!-- Swiper Script -->
+  <script>
+    new Swiper('.gallerySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
