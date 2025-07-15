@@ -1,90 +1,54 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Masai Twist Hair Salon</title>
-	<style type="text/css">
-		#main-body{
-			align-items: center;
-			text-align: center;
-			background-image: url(images/c.jpg);
-			background-size: cover;
-			color: white;
-		}
-		#index{
-			color: white;
-			background-color: blue;
-		}
-		#details{
-			color: white;
-			background-color: blue;
-		}
-		#send{
-			color: white;
-			background-color: blue;
-			border: none;
-			border-radius: 5px;
-		}
-		#send:hover{
-			opacity: 0.7;
-			background-color: green;
-			color: red;
-			cursor: pointer;
-		}
-		#subscribe{
-			color: white;
-			background-color: red;
-			padding: 5px;
-			
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Elvis Wheels</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
-<body id="main-body">
-	<h2>Masai Twist Hair Salon</h2><br>
-	<br>
-	<br>
-	<a id="index" href="index.html">Home Page</a>
-	<a id="details" href="details.html">Hair Styles</a><br>
-	<br>
-	<form action="https://formsubmit.co/p479728@gmail.com" method="POST">
-			<div>
-			
-			<label>Name</label>
-			<input type="text" name="firstName" placeholder="Enter first name"><br>
-			<br>
-			<label>Surname</label>
-			<input type="text" name="lastName" placeholder="Enter Surname"><br>
-			<br>
-			<label>Contact Number</label>
-			<input type="text"><br><br>
-			<label>Email</label>	
-			<input type="email" name="Email" placeholder="Email Adress"><br>
-				<br>
-				<label id="subscribe">Subscribe</label>
-				<input type="radio">
-			<hr>
-			<label>Message</label>
-			<textarea type="text area" name="Message"></textarea><br>
-			<br>
-			<button id="send" input="submit">Submit</button><br>
-		</div>
-		<br>
-	</form>
+<body class="bg-white text-blue-900 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white p-4 flex justify-between">
+    <h1 class="text-xl font-bold">Elvis Wheels</h1>
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+    </ul>
+  </nav>
 
-	<br>
-	<br>
-	<br>
-	<br>
-	Director: Paul<br>
-	19 Leslie Street<br>
-	Vereening <br>
-	Contact Cell: +27-63-551-6720<br>
-	<br>
-	<a href="https://goo.gl/maps/PLgXKvoeqX8hXPzt8">Map click me</a><br>
-	<br>
+  <!-- Contact Section -->
+  <section class="py-12 px-4 max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+    <form action="mailto:bothwell.gurure11@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+      <div>
+        <label for="name" class="block font-semibold">Your Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-4 py-2">
+      </div>
+      <div>
+        <label for="email" class="block font-semibold">Email</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2">
+      </div>
+      <div>
+        <label for="message" class="block font-semibold">Message</label>
+        <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+        Send Message
+      </button>
+    </form>
 
+    <!-- Social Icons -->
+    <div class="flex justify-center space-x-6 mt-8 text-2xl">
+      <a href="https://facebook.com" target="_blank" class="text-blue-700 hover:text-blue-900"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/27780444213" target="_blank" class="text-green-600 hover:text-green-800"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:bothwell.gurure11@gmail.com" class="text-red-600 hover:text-red-800"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4">
+    <p>&copy; 2025 Elvis Wheels. All rights reserved.</p>
+  </footer>
 </body>
 </html>
